@@ -95,7 +95,7 @@ if($result->num_rows){
 	}
 
 }else{
-	$data="No Results Found";
+	$data="<tr ><td colspan='7' align='center'>No Results Found</td></tr>";
 }
 
 /******  build the pagination links ******/
