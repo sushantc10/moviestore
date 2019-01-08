@@ -1,6 +1,8 @@
 <?php
 require_once "./config/config.php";
 
+
+
 $language = "SELECT id as langid, `value` as language FROM `category` where `type` = 'Language' ORDER BY `value`";
 $result1 = $conn->query($language) or die($conn->error);
 $numrows1 = $result1->num_rows;
