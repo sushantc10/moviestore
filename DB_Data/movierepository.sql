@@ -24,7 +24,7 @@ CREATE TABLE `category` (
   `type` varchar(30) NOT NULL,
   `value` varchar(30) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of category
@@ -51,7 +51,7 @@ CREATE TABLE `movies` (
   `movie_length` int(3) DEFAULT NULL,
   `movie_release_date` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of movies
@@ -100,7 +100,7 @@ CREATE TABLE `relationship` (
   KEY `movie_id` (`movie_id`),
   CONSTRAINT `relationship_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`),
   CONSTRAINT `relationship_ibfk_2` FOREIGN KEY (`movie_id`) REFERENCES `movies` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of relationship
